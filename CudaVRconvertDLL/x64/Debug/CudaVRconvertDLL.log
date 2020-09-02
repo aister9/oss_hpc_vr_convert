@@ -1,0 +1,29 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\HPC YW\source\repos\oss_vr_converter\CudaVRconvertDLL>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x64" -x cu   -IC:\CV\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MD " -o x64\Debug\kernel.cu.obj "C:\Users\HPC YW\source\repos\oss_vr_converter\CudaVRconvertDLL\kernel.cu" 
+C:\CV\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:\CV\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:\CV\opencv\build\include\opencv2/stitching/detail/blenders.hpp(100): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+  
+C:\CV\opencv\build\include\opencv2/stitching/detail/blenders.hpp(127): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+  
+C:\CV\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:\CV\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:\CV\opencv\build\include\opencv2/stitching/detail/blenders.hpp(100): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+  
+C:\CV\opencv\build\include\opencv2/stitching/detail/blenders.hpp(127): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+  
+  kernel.cu
+  vrconverter.cpp
+     C:\Users\HPC YW\source\repos\oss_vr_converter\x64\Debug\CudaVRconvertDLL.lib 라이브러리 및 C:\Users\HPC YW\source\repos\oss_vr_converter\x64\Debug\CudaVRconvertDLL.exp 개체를 생성하고 있습니다.
+kernel.cu.obj : error LNK2019: __imp__invalid_parameter"class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl std::operator+<char,struct std::char_traits<char>,class std::allocator<char> >(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&)" (??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@0@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+vrconverter.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp__invalid_parameter
+kernel.cu.obj : error LNK2019: __imp__calloc_dbg"char * __cdecl std::_Maklocstr<char>(char const *,char *,struct _Cvtvec const &)" (??$_Maklocstr@D@std@@YAPEADPEBDPEADAEBU_Cvtvec@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+vrconverter.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp__calloc_dbg
+kernel.cu.obj : error LNK2019: __imp__CrtDbgReport"class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl std::operator+<char,struct std::char_traits<char>,class std::allocator<char> >(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&)" (??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@0@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+vrconverter.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp__CrtDbgReport
+C:\Users\HPC YW\source\repos\oss_vr_converter\x64\Debug\CudaVRconvertDLL.dll : fatal error LNK1120: 3개의 확인할 수 없는 외부 참조입니다.
