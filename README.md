@@ -10,7 +10,12 @@
 다음과 같은 언어로 작성되었습니다.
 
 * C++
+* C# (WF)
 
 프로그램 실행을 위해서 다음 DLL 파일을 필요로 합니다.
 * opencv_world430.dll
 * opencv_opencv_videoio_ffmpeg430_64.dll
+* oss_vr_converter.dll
+* CudaVRConvertDLL.dll
+
+# .netcore runtime 이 설치되어 있어야합니다.
